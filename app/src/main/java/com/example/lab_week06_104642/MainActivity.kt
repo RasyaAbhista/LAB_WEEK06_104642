@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val itemTouchHelper = ItemTouchHelper(catAdapter.swipeToDeleteCallback)
         itemTouchHelper.attachToRecyclerView(recyclerView)
 
-        // tambahkan data ke adapter
+        // tambahkan data ke adapter (10 item)
         catAdapter.setData(
             listOf(
                 CatModel(
@@ -66,6 +66,55 @@ class MainActivity : AppCompatActivity() {
                     "Curious George",
                     "Award winning investigator",
                     "https://cdn2.thecatapi.com/images/bar.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.ExoticShorthair,
+                    "Tom",
+                    "Always chasing Jerry",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.AmericanCurl,
+                    "Luna",
+                    "Dreamy night stalker",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyMg.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.BalineseJavanese,
+                    "Simba",
+                    "The lion king of the house",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNA.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Nala",
+                    "Clever and brave",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNQ.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.AmericanCurl,
+                    "Garfield",
+                    "Loves lasagna, hates Mondays",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNg.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.BalineseJavanese,
+                    "Cleo",
+                    "Elegant and graceful",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNw.jpg"
+                ),
+                CatModel(
+                    Gender.Unknown,
+                    CatBreed.ExoticShorthair,
+                    "Shadow",
+                    "Mysterious and quiet",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyOA.jpg"
                 )
             )
         )
